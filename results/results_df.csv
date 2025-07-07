@@ -1,0 +1,17 @@
+model,params,run_id,rmse,duration
+XGBRegressor,"{'n_estimators': 50, 'max_depth': 5, 'learning_rate': 0.1}",c9efcbcda3cb40d1a1b7cd3fff6df4df,0.14975189304885136,5.686444997787476
+RandomForestRegressor,"{'n_estimators': 100, 'max_depth': 10}",1627f1bf2e13409aa7c20e067c788d66,0.15241495191157395,5.080007314682007
+RandomForestRegressor,"{'n_estimators': 50, 'max_depth': 5}",38c1519bd6544a128641d4f8858d9f9f,0.17223206460884682,4.49014139175415
+RandomForestRegressor,"{'n_estimators': 20, 'max_depth': 5}",0652ea67af7d44d19f779be35e70b9ab,0.17355544071028708,4.168105363845825
+DecisionTreeRegressor,"{'max_depth': 10, 'min_samples_leaf': 20}",8dc09957b151445593c2d269ce975269,0.1747223717405591,4.045306205749512
+DecisionTreeRegressor,"{'max_depth': 15, 'min_samples_leaf': 30}",c457e0ab6c6147e6a434466a7f7c9b50,0.19057718463345924,4.143900156021118
+DecisionTreeRegressor,"{'max_depth': 5, 'min_samples_leaf': 10}",cdfbe0b312164d31ac24dd67cfebaec1,0.19655478108508234,3.8048665523529053
+LinearRegression,{},f7b85850e8c041f092e6e1b4f752a0e8,0.3149708535216611,19.077691793441772
+Ridge,{'alpha': 0.1},a6c39bea301347b3adeeb156a2d8807e,0.314975643408228,4.039871692657471
+Ridge,{'alpha': 1.0},62b3f906240f465b93a9c31b609e8288,0.31502172020397806,3.829896926879883
+Ridge,{'alpha': 10.0},6d8cbb4652634b4db15263d0acf807dd,0.31574052516780404,3.751572370529175
+LGBMRegressor,"{'n_estimators': 10, 'max_depth': 5, 'learning_rate': 0.1}",5bd96b4e494145d29530015d5aabcb18,0.3667052352478153,4.7052459716796875
+XGBRegressor,"{'n_estimators': 100, 'max_depth': 10, 'learning_rate': 0.01}",91a39b33cc704c7ba5dbb4cdb95a8e69,0.3879699210788127,5.758340120315552
+XGBRegressor,"{'n_estimators': 150, 'max_depth': 15, 'learning_rate': 0.005}",cbce6fc793d34898a9b0673b02467edc,0.4788964795396153,7.059577226638794
+LGBMRegressor,"{'n_estimators': 50, 'max_depth': 10, 'learning_rate': 0.01}",0ae65b7e52d7419cb34dd4d274b67b73,0.5878613972376068,4.2098071575164795
+LGBMRegressor,"{'n_estimators': 100, 'max_depth': 15, 'learning_rate': 0.005}",51595e91053241e0ad84e3d515691ed0,0.5885742372149956,4.296010494232178
