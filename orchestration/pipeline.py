@@ -83,8 +83,11 @@ def train_best_model(
             rmse = np.sqrt(np.mean((y_test - y_pred) ** 2))
 
             #log DictVectorizer
-            os.makedirs("models", exist_ok=True)
-            dv_path = os.path.abspath("models/dv.pkl")
+            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+            models_dir = os.path.join(base_dir, "models")
+            os.makedirs(models_dir, exist_ok=True)
+
+            dv_path = os.path.join(models_dir, "dv.pkl")
             with open(dv_path, "wb") as f:
                 pickle.dump(dv, f)
             mlflow.log_artifact(dv_path, artifact_path='preprocessor')
