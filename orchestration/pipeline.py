@@ -52,7 +52,6 @@ def preprocess_data(df_train: pd.DataFrame, df_test: pd.DataFrame) -> tuple:
     # fit and transform
     X_train = dv.fit_transform(train_dict)
     X_test = dv.transform(test_dict)
-
     return X_train, X_test, dv
 
 @task
@@ -85,9 +84,11 @@ def train_best_model(
 
             #log DictVectorizer
             os.makedirs("models", exist_ok=True)
-            with open("models/dv.pkl", "wb") as f:
+            dv_path = os.path.abspath("models/dv.pkl")
+            with open(dv_path, "wb") as f:
                 pickle.dump(dv, f)
-            mlflow.log_artifact("models/dv.pkl", artifact_path='preprocessor')
+            mlflow.log_artifact(dv_path, artifact_path='preprocessor')
+            logger.info(f"Saved DictVectorizer at: {dv_path}")
 
             # log parameters and metrics
             mlflow.set_tag("model", "XGBRegressor")
