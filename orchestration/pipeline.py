@@ -4,6 +4,7 @@ import numpy as np
 import xgboost as xgb
 import mlflow
 import pickle
+import os
 
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.model_selection import train_test_split
@@ -83,6 +84,7 @@ def train_best_model(
             rmse = np.sqrt(np.mean((y_test - y_pred) ** 2))
 
             #log DictVectorizer
+            os.makedirs("models", exist_ok=True)
             with open("models/dv.pkl", "wb") as f:
                 pickle.dump(dv, f)
             mlflow.log_artifact("models/dv.pkl", artifact_path='preprocessor')
