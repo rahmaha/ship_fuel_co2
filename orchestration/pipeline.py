@@ -125,7 +125,7 @@ def register_best_model(run_id: str, model_name: str) -> str:
     return f'models:/{model_name}/{model_version.version}'
 
 @flow
-def main_flow(path: str = "../data/ship_fuel_efficiency.csv") -> None:
+def main_flow(path: str = "data/ship_fuel_efficiency.csv") -> None:
     """The main training pipeline"""
 
     # MLflow settings
