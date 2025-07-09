@@ -29,7 +29,7 @@ deployments:
     cron: "0 3 * * SUN"           # Every Sunday at 3:00 AM
     timezone: "Asia/Jakarta"      # Keeps it local to your timezone
   flow_name: main-flow
-  entrypoint: pipeline.py:main_flow
+  entrypoint: orchestration/pipeline.py:main_flow
   parameters: {}
   work_pool:
     name: ship_pool
