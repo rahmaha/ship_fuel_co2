@@ -13,6 +13,7 @@ from mlflow.tracking import MlflowClient
 from mlflow.exceptions import RestException
 from prefect import task, flow
 from prefect import get_run_logger
+from dotenv import load_dotenv
 
 
 @task(retries=2, retry_delay_seconds=5)
@@ -87,12 +88,21 @@ def train_best_model(
             models_dir = os.path.join(base_dir, "models")
             os.makedirs(models_dir, exist_ok=True)
 
+            model_path = os.path.join(models_dir, "model.pkl")
             dv_path = os.path.join(models_dir, "dv.pkl")
+            
+            #save the model locally for using docker later
+            with open(model_path, "wb") as f:
+                pickle.dump(mo_model, f)
             with open(dv_path, "wb") as f:
                 pickle.dump(dv, f)
+                
             mlflow.log_artifact(dv_path, artifact_path='preprocessor')
+            mlflow.sklearn.log_model(mo_model, artifact_path="model", registered_model_name="ship_fuel_co2_predictor")
+            
             logger.info(f"Saved DictVectorizer at: {dv_path}")
-
+            logger.info(f"Saved model at: {model_path}")
+            
             # log parameters and metrics
             mlflow.set_tag("model", "XGBRegressor")
             mlflow.set_tag("model_params", str(best_params))
@@ -112,14 +122,21 @@ def train_best_model(
 
 @task(retries=2, retry_delay_seconds=5)
 def register_best_model(run_id: str, model_name: str) -> str:
-    """Register the model from a specific Mlflow run"""
+    """Always register a new version of the model for the given Mlflow run."""
 
     client = MlflowClient()
-    try:
-        client.create_registered_model(model_name)
-    except RestException:
-        print(f"Model '{model_name}' already exists. Skipping creation.")
+    logger = get_run_logger()
 
+    # Try to get the registered model (if it exists)
+    try:
+        client.get_registered_model(model_name)
+        logger.info(f'Model "{model_name}" already exists. Registering new version...')
+    except RestException:
+        # If not found, create it
+        client.create_registered_model(model_name)
+        logger.info(f'Model "{model_name}" created.')
+
+    # Register new model version
     model_uri = f"runs:/{run_id}/model"
     model_version = client.create_model_version(
         name=model_name,
@@ -127,22 +144,26 @@ def register_best_model(run_id: str, model_name: str) -> str:
         run_id=run_id
     )
 
-    print(f'Model registered: {model_name} (version {model_version.version})')
+    logger.info(f'Model registered: {model_name} (version {model_version.version})')
     return f'models:/{model_name}/{model_version.version}'
+
+
 
 @flow
 def main_flow(path: str = "data/ship_fuel_efficiency.csv") -> None:
     """The main training pipeline"""
 
     # MLflow settings
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
-    mlflow.set_experiment("ship_fuel_co2_mlops")
+    #load from .env
+    load_dotenv()
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+    mlflow.set_experiment(os.getenv("MLFLOW_EXPERIMENT_NAME"))
 
     #load 
     df = load_data(path)
 
     # preprocess target columns
-    df[target_columns] = apply_log_transform(df[target_columns])
+    df = apply_log_transform(df)
 
     # split
     df_train, df_test, y_train, y_test = split_data(df)
