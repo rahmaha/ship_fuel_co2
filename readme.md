@@ -22,12 +22,14 @@ prefect deployment run main-flow/ship_training
 uvicorn deployment.main:app --reload --port 9696
 python deployment\test.py
 
-docker build -f docker/Dockerfile -t ship-co2-model .
-docker run --rm --env-file .env -p 9696:9696 ship-co2-model
+docker build -f docker/Dockerfile.prefect -t prefect-ship-fuel .
 
-docker build -f deployment/Dockerfile -t ship-predictor .
-docker run --rm --env-file .env -p 9696:9696 ship-predictor
-python deployment/test.py
-docker stop $(docker ps -q --filter ancestor=ship-predictor)
+docker build -f docker/Dockerfile -t ship_fuel_co2 .
+docker run -it --rm -p 9696:9696 ship_fuel_co2
+docker run --rm --env-file .env -p 9696:9696 ship_fuel_co2
 
+prefect deploy 
+and etc
+
+docker-compose up --build
 

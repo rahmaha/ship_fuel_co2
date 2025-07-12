@@ -71,6 +71,6 @@ def predict(input_data: ShipInput) -> dict:
         raise HTTPException(status_code=400, detail=str(e))
 
 
-@app.get('/')
+@app.get('/health')
 def health_check():
     return {'status': 'ok'}

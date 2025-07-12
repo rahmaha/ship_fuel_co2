@@ -1,0 +1,576 @@
+ship_type,route_id,month,distance,fuel_type,fuel_consumption,CO2_emissions,weather_conditions,engine_efficiency
+Fishing Trawler,Port Harcourt-Lagos,February,186.54,HFO,3789.19,9689.24,Calm,74.11
+Fishing Trawler,Port Harcourt-Lagos,March,164.13,Diesel,4762.81,12376.31,Moderate,89.35
+Fishing Trawler,Escravos-Lagos,April,143.69,HFO,3229.98,9687.84,Stormy,86.38
+Fishing Trawler,Port Harcourt-Lagos,May,70.7,Diesel,1852.02,5286.11,Stormy,92.46
+Fishing Trawler,Lagos-Apapa,June,165.7,Diesel,4536.86,12032.59,Stormy,75.93
+Fishing Trawler,Port Harcourt-Lagos,July,148.93,Diesel,4090.68,10365.28,Moderate,72.64
+Fishing Trawler,Port Harcourt-Lagos,August,70.3,Diesel,1663.59,4460.98,Stormy,74.38
+Fishing Trawler,Escravos-Lagos,September,133.79,HFO,3281.15,8463.08,Calm,75.27
+Fishing Trawler,Escravos-Lagos,October,144.96,Diesel,3134.03,9040.23,Moderate,93.17
+Fishing Trawler,Port Harcourt-Lagos,November,124.02,Diesel,3653.79,9257.25,Calm,73.58
+Fishing Trawler,Port Harcourt-Lagos,December,96.86,HFO,2379.37,6875.75,Moderate,75.57
+Oil Service Boat,Lagos-Apapa,January,22.44,Diesel,597.21,1786.37,Moderate,86.59
+Oil Service Boat,Lagos-Apapa,February,20.6,HFO,622.42,1852.83,Moderate,87.09
+Oil Service Boat,Port Harcourt-Lagos,March,139.23,Diesel,4688.41,11744.41,Stormy,84.77
+Oil Service Boat,Escravos-Lagos,April,148.29,HFO,4810.73,12863.0,Stormy,92.03
+Oil Service Boat,Lagos-Apapa,May,94.83,Diesel,2430.86,7153.42,Stormy,89.2
+Oil Service Boat,Escravos-Lagos,June,43.15,HFO,1466.84,3915.59,Calm,77.83
+Oil Service Boat,Lagos-Apapa,July,116.36,Diesel,3977.57,10264.09,Stormy,89.43
+Oil Service Boat,Lagos-Apapa,August,78.61,HFO,2161.44,5898.49,Moderate,76.8
+Oil Service Boat,Warri-Bonny,September,34.27,Diesel,1035.2,2617.39,Stormy,73.38
+Oil Service Boat,Lagos-Apapa,October,86.53,HFO,3007.88,7573.33,Stormy,93.22
+Oil Service Boat,Lagos-Apapa,November,21.11,HFO,616.55,1749.73,Calm,86.13
+Oil Service Boat,Lagos-Apapa,December,94.68,Diesel,3081.54,8120.79,Calm,80.81
+Fishing Trawler,Escravos-Lagos,January,84.75,Diesel,2467.74,7030.55,Stormy,94.95
+Fishing Trawler,Escravos-Lagos,February,62.46,HFO,1423.24,4204.77,Stormy,75.98
+Fishing Trawler,Port Harcourt-Lagos,March,162.17,HFO,4346.17,12030.17,Moderate,72.22
+Fishing Trawler,Port Harcourt-Lagos,April,192.55,HFO,4607.86,11827.04,Moderate,81.0
+Fishing Trawler,Escravos-Lagos,May,162.94,HFO,3842.62,9883.27,Stormy,94.49
+Fishing Trawler,Port Harcourt-Lagos,June,154.26,HFO,3481.79,8909.32,Moderate,84.58
+Fishing Trawler,Port Harcourt-Lagos,July,77.13,Diesel,2071.89,5760.56,Moderate,83.33
+Fishing Trawler,Port Harcourt-Lagos,August,107.28,Diesel,2728.99,7912.88,Stormy,89.41
+Fishing Trawler,Lagos-Apapa,September,87.62,HFO,2326.27,6378.93,Stormy,86.94
+Fishing Trawler,Port Harcourt-Lagos,October,60.66,HFO,1502.75,4268.35,Calm,85.88
+Fishing Trawler,Lagos-Apapa,November,130.27,HFO,3736.45,9619.6,Moderate,72.61
+Fishing Trawler,Escravos-Lagos,December,165.68,HFO,3351.83,9964.56,Moderate,94.44
+Fishing Trawler,Escravos-Lagos,January,58.13,HFO,1333.54,3419.66,Calm,79.4
+Fishing Trawler,Warri-Bonny,February,162.07,HFO,3393.95,9639.17,Stormy,94.43
+Fishing Trawler,Escravos-Lagos,March,138.87,Diesel,4158.93,11194.82,Moderate,77.87
+Fishing Trawler,Escravos-Lagos,April,110.59,Diesel,2794.18,7429.5,Stormy,81.88
+Fishing Trawler,Warri-Bonny,May,190.44,Diesel,5380.16,15941.88,Calm,76.3
+Fishing Trawler,Escravos-Lagos,June,144.16,HFO,3420.34,8899.12,Stormy,71.32
+Fishing Trawler,Escravos-Lagos,July,57.07,Diesel,1284.34,3627.18,Calm,87.55
+Fishing Trawler,Warri-Bonny,August,184.68,HFO,3793.09,10590.5,Stormy,74.76
+Fishing Trawler,Escravos-Lagos,September,75.35,Diesel,2080.44,5774.91,Stormy,73.05
+Fishing Trawler,Escravos-Lagos,October,100.82,HFO,2492.65,6793.97,Moderate,80.03
+Fishing Trawler,Warri-Bonny,November,199.29,Diesel,4985.43,12957.47,Moderate,76.5
+Fishing Trawler,Escravos-Lagos,December,144.49,Diesel,3057.9,7716.97,Moderate,72.2
+Tanker Ship,Warri-Bonny,January,74.63,Diesel,3318.62,8750.39,Calm,78.82
+Tanker Ship,Lagos-Apapa,February,315.48,Diesel,11379.08,32038.78,Calm,84.53
+Tanker Ship,Warri-Bonny,March,413.63,HFO,16162.17,41307.84,Stormy,70.88
+Tanker Ship,Escravos-Lagos,April,121.51,HFO,6047.79,17026.14,Stormy,74.28
+Tanker Ship,Escravos-Lagos,May,469.5,HFO,19139.7,56789.95,Moderate,84.36
+Tanker Ship,Lagos-Apapa,June,351.28,Diesel,17549.18,50562.37,Stormy,83.06
+Tanker Ship,Escravos-Lagos,July,415.2,Diesel,19594.43,53419.24,Moderate,70.3
+Tanker Ship,Lagos-Apapa,August,129.56,HFO,5516.13,14323.68,Stormy,84.51
+Tanker Ship,Port Harcourt-Lagos,September,254.44,Diesel,12326.35,36434.06,Calm,92.57
+Tanker Ship,Lagos-Apapa,October,81.45,Diesel,2664.7,7246.19,Moderate,93.48
+Tanker Ship,Warri-Bonny,November,197.55,Diesel,8949.91,26043.45,Stormy,79.6
+Tanker Ship,Warri-Bonny,December,70.2,HFO,2777.14,8127.41,Stormy,74.94
+Surfer Boat,Escravos-Lagos,January,198.34,Diesel,3902.93,9882.67,Stormy,92.6
+Surfer Boat,Lagos-Apapa,February,136.1,Diesel,1684.36,4494.46,Calm,90.26
+Surfer Boat,Port Harcourt-Lagos,March,30.29,Diesel,307.58,781.47,Moderate,94.54
+Surfer Boat,Lagos-Apapa,April,164.19,Diesel,2324.1,6716.44,Moderate,91.53
+Surfer Boat,Lagos-Apapa,May,84.35,Diesel,1300.29,3468.17,Stormy,91.35
+Surfer Boat,Escravos-Lagos,June,58.51,Diesel,1116.64,3136.55,Stormy,94.6
+Surfer Boat,Lagos-Apapa,July,122.84,Diesel,1575.3,4377.6,Calm,73.6
+Surfer Boat,Port Harcourt-Lagos,August,146.15,Diesel,2289.81,5772.8,Stormy,84.59
+Surfer Boat,Warri-Bonny,September,30.83,Diesel,434.02,1238.46,Moderate,75.65
+Surfer Boat,Escravos-Lagos,October,95.04,Diesel,1161.77,3414.77,Calm,86.13
+Surfer Boat,Lagos-Apapa,November,43.32,Diesel,593.15,1594.07,Stormy,72.2
+Surfer Boat,Warri-Bonny,December,74.81,Diesel,1055.36,2844.71,Moderate,93.58
+Tanker Ship,Port Harcourt-Lagos,January,99.42,HFO,3063.86,8874.65,Calm,79.97
+Tanker Ship,Escravos-Lagos,February,198.12,Diesel,9003.94,24476.99,Calm,72.36
+Tanker Ship,Lagos-Apapa,March,441.01,Diesel,18657.58,49496.3,Stormy,76.1
+Tanker Ship,Escravos-Lagos,April,186.19,HFO,7408.95,21077.0,Calm,79.02
+Tanker Ship,Escravos-Lagos,May,363.45,Diesel,17011.89,50197.68,Stormy,70.61
+Tanker Ship,Lagos-Apapa,June,225.43,HFO,6994.13,20516.69,Stormy,94.01
+Tanker Ship,Lagos-Apapa,July,266.93,HFO,10696.0,29401.12,Stormy,82.06
+Tanker Ship,Escravos-Lagos,August,133.86,Diesel,4294.23,11047.03,Stormy,73.86
+Tanker Ship,Port Harcourt-Lagos,September,264.09,HFO,8174.05,23285.83,Calm,74.22
+Tanker Ship,Lagos-Apapa,October,325.03,HFO,15186.34,43420.24,Moderate,74.28
+Tanker Ship,Warri-Bonny,November,477.39,Diesel,21877.35,57391.88,Stormy,84.65
+Tanker Ship,Escravos-Lagos,December,129.69,Diesel,6036.81,17610.71,Moderate,92.6
+Oil Service Boat,Lagos-Apapa,January,117.74,Diesel,3556.44,9410.21,Moderate,81.36
+Oil Service Boat,Warri-Bonny,February,47.67,Diesel,1413.32,3750.76,Calm,86.01
+Oil Service Boat,Lagos-Apapa,March,102.8,Diesel,3072.71,8006.15,Calm,82.27
+Oil Service Boat,Warri-Bonny,April,128.59,Diesel,3431.02,9739.84,Calm,93.64
+Oil Service Boat,Lagos-Apapa,May,138.91,HFO,4090.91,11119.62,Calm,84.51
+Oil Service Boat,Warri-Bonny,June,105.78,Diesel,2791.65,7601.5,Calm,87.4
+Oil Service Boat,Lagos-Apapa,July,83.29,Diesel,2083.79,5359.33,Moderate,71.88
+Oil Service Boat,Lagos-Apapa,August,48.31,Diesel,1574.13,4325.94,Stormy,86.57
+Oil Service Boat,Port Harcourt-Lagos,September,132.82,HFO,3977.06,11919.96,Moderate,79.42
+Oil Service Boat,Escravos-Lagos,October,138.02,HFO,3509.58,10304.02,Stormy,82.65
+Oil Service Boat,Escravos-Lagos,November,82.39,Diesel,2820.36,7459.44,Calm,82.34
+Oil Service Boat,Escravos-Lagos,December,116.13,Diesel,3470.6,10037.37,Moderate,75.88
+Fishing Trawler,Lagos-Apapa,January,157.72,HFO,4578.65,11491.73,Calm,92.7
+Fishing Trawler,Escravos-Lagos,February,168.87,HFO,3912.07,10457.32,Moderate,85.5
+Fishing Trawler,Port Harcourt-Lagos,March,80.65,HFO,2153.0,6049.13,Moderate,84.4
+Fishing Trawler,Warri-Bonny,April,95.48,HFO,2197.77,5770.04,Stormy,94.88
+Fishing Trawler,Lagos-Apapa,May,179.04,Diesel,4754.14,12889.94,Moderate,77.59
+Fishing Trawler,Warri-Bonny,June,99.88,HFO,2586.51,7609.17,Stormy,89.48
+Fishing Trawler,Warri-Bonny,July,110.7,HFO,2919.89,7997.51,Stormy,86.85
+Fishing Trawler,Port Harcourt-Lagos,August,188.2,Diesel,5376.72,16031.77,Moderate,83.21
+Fishing Trawler,Port Harcourt-Lagos,September,154.67,HFO,3866.82,10458.27,Calm,90.54
+Fishing Trawler,Escravos-Lagos,October,131.64,Diesel,3580.38,10247.33,Calm,82.4
+Fishing Trawler,Lagos-Apapa,November,197.61,HFO,5406.44,15749.84,Calm,84.17
+Fishing Trawler,Escravos-Lagos,December,87.06,HFO,1839.13,5254.26,Calm,75.2
+Tanker Ship,Warri-Bonny,January,114.42,HFO,3997.38,10756.2,Calm,76.7
+Tanker Ship,Escravos-Lagos,February,195.1,HFO,7910.82,23493.01,Moderate,85.06
+Tanker Ship,Escravos-Lagos,March,81.28,HFO,3774.91,11314.53,Calm,82.17
+Tanker Ship,Lagos-Apapa,April,498.18,HFO,17122.71,49536.57,Moderate,80.44
+Tanker Ship,Port Harcourt-Lagos,May,346.99,Diesel,16260.0,47965.14,Stormy,94.69
+Tanker Ship,Lagos-Apapa,June,478.32,HFO,20999.87,56474.14,Calm,84.38
+Tanker Ship,Port Harcourt-Lagos,July,335.63,HFO,16445.34,47446.8,Calm,76.08
+Tanker Ship,Port Harcourt-Lagos,August,79.97,Diesel,3605.05,10272.86,Moderate,84.8
+Tanker Ship,Escravos-Lagos,September,388.76,HFO,15879.62,44378.97,Calm,86.73
+Tanker Ship,Escravos-Lagos,October,253.73,Diesel,12262.93,34486.14,Moderate,78.9
+Tanker Ship,Warri-Bonny,November,186.41,Diesel,5795.93,16322.53,Calm,85.03
+Tanker Ship,Lagos-Apapa,December,442.43,HFO,15135.69,43712.56,Stormy,93.93
+Oil Service Boat,Port Harcourt-Lagos,January,127.59,Diesel,4351.49,12534.17,Moderate,80.6
+Oil Service Boat,Port Harcourt-Lagos,February,101.49,HFO,3437.66,9986.34,Stormy,88.73
+Oil Service Boat,Port Harcourt-Lagos,March,119.99,HFO,3386.08,9468.75,Calm,78.77
+Oil Service Boat,Escravos-Lagos,April,67.77,HFO,2230.76,5777.21,Moderate,83.25
+Oil Service Boat,Warri-Bonny,May,21.22,HFO,652.77,1747.54,Stormy,84.64
+Oil Service Boat,Warri-Bonny,June,136.76,Diesel,4079.97,12130.44,Moderate,72.43
+Oil Service Boat,Warri-Bonny,July,21.43,Diesel,732.09,1981.43,Calm,70.53
+Oil Service Boat,Escravos-Lagos,August,60.06,Diesel,1746.95,5146.75,Moderate,89.05
+Oil Service Boat,Port Harcourt-Lagos,September,149.51,Diesel,4408.92,11330.54,Stormy,77.56
+Oil Service Boat,Escravos-Lagos,October,67.53,HFO,2264.51,6494.42,Stormy,83.97
+Oil Service Boat,Port Harcourt-Lagos,November,51.71,Diesel,1644.81,4189.89,Stormy,72.01
+Oil Service Boat,Lagos-Apapa,December,92.1,HFO,3220.76,8191.16,Moderate,82.07
+Fishing Trawler,Warri-Bonny,January,126.91,Diesel,3765.37,10827.73,Moderate,80.13
+Fishing Trawler,Lagos-Apapa,February,161.99,Diesel,3592.01,10431.57,Moderate,70.83
+Fishing Trawler,Warri-Bonny,March,119.43,HFO,3159.13,8458.54,Moderate,86.27
+Fishing Trawler,Warri-Bonny,April,115.97,Diesel,2914.71,7450.23,Calm,89.95
+Fishing Trawler,Escravos-Lagos,May,140.93,Diesel,3123.16,8133.81,Calm,81.87
+Fishing Trawler,Warri-Bonny,June,199.81,Diesel,4967.24,14119.67,Moderate,91.56
+Fishing Trawler,Port Harcourt-Lagos,July,165.27,HFO,4567.73,11974.13,Stormy,74.01
+Fishing Trawler,Warri-Bonny,August,77.03,HFO,1673.46,4290.22,Calm,83.29
+Fishing Trawler,Port Harcourt-Lagos,September,95.42,Diesel,1941.68,5247.58,Moderate,73.12
+Fishing Trawler,Lagos-Apapa,October,66.88,Diesel,1614.5,4210.33,Calm,73.91
+Fishing Trawler,Lagos-Apapa,November,121.16,HFO,2780.05,7288.36,Calm,73.7
+Fishing Trawler,Warri-Bonny,December,118.03,HFO,2778.69,7990.66,Moderate,93.59
+Tanker Ship,Port Harcourt-Lagos,January,119.04,Diesel,4660.57,13132.83,Calm,77.62
+Tanker Ship,Escravos-Lagos,February,76.49,HFO,3651.8,9909.18,Calm,91.0
+Tanker Ship,Lagos-Apapa,March,206.81,HFO,9953.86,28157.6,Calm,90.18
+Tanker Ship,Escravos-Lagos,April,441.81,HFO,18535.47,48555.13,Moderate,79.61
+Tanker Ship,Port Harcourt-Lagos,May,115.57,Diesel,3509.64,10440.23,Stormy,88.01
+Tanker Ship,Escravos-Lagos,June,435.76,HFO,14392.02,39209.32,Stormy,70.77
+Tanker Ship,Escravos-Lagos,July,231.77,Diesel,7505.5,21079.25,Moderate,85.07
+Tanker Ship,Port Harcourt-Lagos,August,88.81,HFO,4282.41,10884.08,Calm,78.59
+Tanker Ship,Port Harcourt-Lagos,September,487.34,HFO,16075.79,46893.78,Calm,85.83
+Tanker Ship,Escravos-Lagos,October,305.38,HFO,13160.89,37035.32,Calm,78.95
+Tanker Ship,Escravos-Lagos,November,404.67,Diesel,15459.51,44724.47,Moderate,78.49
+Tanker Ship,Port Harcourt-Lagos,December,438.81,HFO,20172.76,54794.68,Calm,76.39
+Oil Service Boat,Port Harcourt-Lagos,January,93.39,Diesel,2700.59,8062.21,Stormy,84.67
+Oil Service Boat,Escravos-Lagos,February,54.67,Diesel,1503.38,4082.06,Stormy,81.74
+Oil Service Boat,Escravos-Lagos,March,129.38,Diesel,4118.22,11198.28,Moderate,82.1
+Oil Service Boat,Escravos-Lagos,April,70.55,Diesel,2085.57,6215.44,Calm,82.71
+Oil Service Boat,Port Harcourt-Lagos,May,116.25,Diesel,3866.17,11273.16,Stormy,78.83
+Oil Service Boat,Lagos-Apapa,June,101.72,HFO,3315.76,8756.07,Calm,77.7
+Oil Service Boat,Lagos-Apapa,July,120.9,HFO,3856.34,11079.7,Moderate,73.46
+Oil Service Boat,Warri-Bonny,August,87.66,Diesel,2573.41,7638.04,Stormy,75.87
+Oil Service Boat,Warri-Bonny,September,46.42,HFO,1176.1,3044.58,Moderate,81.75
+Oil Service Boat,Escravos-Lagos,October,37.71,Diesel,1167.85,2928.03,Stormy,94.98
+Oil Service Boat,Port Harcourt-Lagos,November,26.56,Diesel,838.39,2267.25,Calm,90.52
+Oil Service Boat,Escravos-Lagos,December,115.51,HFO,4020.17,12003.0,Moderate,73.89
+Oil Service Boat,Port Harcourt-Lagos,January,94.39,Diesel,2499.01,6836.97,Calm,88.56
+Oil Service Boat,Lagos-Apapa,February,20.08,Diesel,652.41,1936.77,Moderate,87.22
+Oil Service Boat,Escravos-Lagos,March,69.46,HFO,2422.91,6070.69,Calm,75.98
+Oil Service Boat,Escravos-Lagos,April,29.73,Diesel,828.93,2269.53,Stormy,93.32
+Oil Service Boat,Lagos-Apapa,May,119.35,Diesel,3669.87,10672.42,Moderate,90.49
+Oil Service Boat,Escravos-Lagos,June,149.22,HFO,4245.11,12516.02,Calm,89.78
+Oil Service Boat,Warri-Bonny,July,96.46,HFO,2762.16,8073.99,Moderate,74.83
+Oil Service Boat,Port Harcourt-Lagos,August,110.5,Diesel,3829.91,10198.33,Calm,87.93
+Oil Service Boat,Warri-Bonny,September,39.47,HFO,1093.35,3111.87,Calm,70.69
+Oil Service Boat,Escravos-Lagos,October,38.76,Diesel,1337.11,3677.54,Stormy,90.78
+Oil Service Boat,Escravos-Lagos,November,119.06,Diesel,3305.5,9045.83,Calm,87.54
+Oil Service Boat,Warri-Bonny,December,87.85,Diesel,3067.31,9172.5,Moderate,85.93
+Surfer Boat,Escravos-Lagos,January,132.09,Diesel,2338.03,6801.3,Stormy,80.54
+Surfer Boat,Warri-Bonny,February,156.94,Diesel,2726.2,7105.63,Moderate,83.54
+Surfer Boat,Port Harcourt-Lagos,March,191.47,Diesel,2401.72,6719.46,Stormy,92.62
+Surfer Boat,Warri-Bonny,April,71.41,Diesel,816.84,2107.48,Moderate,73.67
+Surfer Boat,Warri-Bonny,May,187.54,Diesel,3392.47,9342.74,Moderate,81.52
+Surfer Boat,Lagos-Apapa,June,180.7,Diesel,3096.62,7963.93,Moderate,87.31
+Surfer Boat,Lagos-Apapa,July,123.87,Diesel,1285.91,3606.63,Moderate,74.41
+Surfer Boat,Port Harcourt-Lagos,August,81.7,Diesel,836.03,2299.81,Stormy,80.89
+Surfer Boat,Port Harcourt-Lagos,September,66.1,Diesel,1314.38,3802.27,Moderate,71.88
+Surfer Boat,Lagos-Apapa,October,183.97,Diesel,2060.31,5251.52,Stormy,93.24
+Surfer Boat,Escravos-Lagos,November,122.76,Diesel,2307.49,6124.93,Moderate,76.32
+Surfer Boat,Escravos-Lagos,December,159.92,Diesel,2146.52,5426.64,Moderate,89.35
+Fishing Trawler,Warri-Bonny,January,82.71,HFO,2160.27,5821.08,Stormy,92.42
+Fishing Trawler,Warri-Bonny,February,155.75,Diesel,3907.27,10136.14,Moderate,76.48
+Fishing Trawler,Lagos-Apapa,March,119.4,HFO,2418.1,6706.53,Moderate,94.91
+Fishing Trawler,Lagos-Apapa,April,133.02,Diesel,3290.16,8961.68,Calm,76.83
+Fishing Trawler,Port Harcourt-Lagos,May,160.55,HFO,3433.19,10208.53,Calm,88.01
+Fishing Trawler,Warri-Bonny,June,82.39,Diesel,1907.49,4915.59,Calm,72.94
+Fishing Trawler,Warri-Bonny,July,51.83,HFO,1046.85,2895.31,Moderate,85.21
+Fishing Trawler,Lagos-Apapa,August,78.98,HFO,1882.88,5493.58,Stormy,75.84
+Fishing Trawler,Port Harcourt-Lagos,September,132.72,HFO,3576.81,9563.69,Moderate,93.01
+Fishing Trawler,Port Harcourt-Lagos,October,194.42,Diesel,5505.24,16086.59,Calm,93.32
+Fishing Trawler,Warri-Bonny,November,89.97,Diesel,1804.05,5138.46,Stormy,91.2
+Fishing Trawler,Escravos-Lagos,December,80.5,HFO,2275.88,6511.42,Calm,71.62
+Tanker Ship,Escravos-Lagos,January,170.41,Diesel,7649.51,22033.35,Calm,88.86
+Tanker Ship,Warri-Bonny,February,401.99,HFO,12851.52,35694.86,Calm,93.79
+Tanker Ship,Warri-Bonny,March,480.77,Diesel,16041.21,45448.92,Calm,91.84
+Tanker Ship,Warri-Bonny,April,72.98,Diesel,2205.55,5899.71,Moderate,81.0
+Tanker Ship,Lagos-Apapa,May,471.82,Diesel,20215.06,56129.0,Calm,80.85
+Tanker Ship,Lagos-Apapa,June,347.23,HFO,11933.39,30710.22,Calm,87.31
+Tanker Ship,Lagos-Apapa,July,409.5,HFO,15023.17,41839.62,Stormy,76.3
+Tanker Ship,Lagos-Apapa,August,139.91,HFO,5612.47,16519.55,Stormy,76.96
+Tanker Ship,Escravos-Lagos,September,460.79,Diesel,20146.18,50502.14,Calm,86.9
+Tanker Ship,Lagos-Apapa,October,286.38,HFO,12557.11,35528.1,Moderate,85.74
+Tanker Ship,Warri-Bonny,November,264.88,HFO,13135.67,33536.2,Moderate,80.73
+Tanker Ship,Lagos-Apapa,December,168.51,HFO,7337.61,20960.98,Moderate,84.01
+Tanker Ship,Warri-Bonny,January,258.79,HFO,9718.62,25374.78,Moderate,85.31
+Tanker Ship,Escravos-Lagos,February,340.52,HFO,11534.55,30019.85,Calm,76.01
+Tanker Ship,Port Harcourt-Lagos,March,481.55,Diesel,21503.19,62594.91,Calm,77.75
+Tanker Ship,Warri-Bonny,April,468.84,HFO,22291.5,64023.74,Calm,86.7
+Tanker Ship,Escravos-Lagos,May,345.89,Diesel,15077.31,45076.05,Stormy,70.75
+Tanker Ship,Escravos-Lagos,June,261.11,Diesel,12715.1,35201.36,Moderate,87.16
+Tanker Ship,Lagos-Apapa,July,333.5,HFO,14947.42,41718.84,Calm,91.78
+Tanker Ship,Lagos-Apapa,August,283.9,Diesel,12855.26,35673.84,Stormy,78.57
+Tanker Ship,Lagos-Apapa,September,382.49,Diesel,12204.35,32408.43,Calm,92.74
+Tanker Ship,Warri-Bonny,October,122.06,HFO,6026.92,17743.42,Moderate,91.7
+Tanker Ship,Lagos-Apapa,November,137.59,HFO,6405.73,16970.72,Calm,83.35
+Tanker Ship,Lagos-Apapa,December,142.39,Diesel,5713.57,16315.22,Stormy,91.72
+Fishing Trawler,Lagos-Apapa,January,150.46,Diesel,3586.36,9536.72,Moderate,87.33
+Fishing Trawler,Lagos-Apapa,February,145.65,Diesel,4228.53,11561.88,Calm,90.73
+Fishing Trawler,Warri-Bonny,March,117.93,Diesel,3498.16,9897.54,Moderate,91.9
+Fishing Trawler,Lagos-Apapa,April,172.62,HFO,3645.56,10432.15,Moderate,72.05
+Fishing Trawler,Warri-Bonny,May,86.3,Diesel,2437.63,6987.97,Moderate,83.89
+Fishing Trawler,Escravos-Lagos,June,54.9,HFO,1136.12,2946.21,Moderate,76.39
+Fishing Trawler,Lagos-Apapa,July,92.52,Diesel,2449.41,7132.7,Moderate,93.89
+Fishing Trawler,Lagos-Apapa,August,192.28,HFO,4537.87,12289.2,Stormy,92.08
+Fishing Trawler,Warri-Bonny,September,56.93,HFO,1354.49,3727.43,Stormy,79.85
+Fishing Trawler,Escravos-Lagos,October,160.58,Diesel,4793.45,14333.11,Stormy,84.35
+Fishing Trawler,Escravos-Lagos,November,53.58,Diesel,1493.06,4311.16,Moderate,89.49
+Fishing Trawler,Port Harcourt-Lagos,December,175.22,Diesel,5109.36,14751.83,Moderate,77.41
+Fishing Trawler,Escravos-Lagos,January,74.99,HFO,1698.4,4800.45,Calm,92.18
+Fishing Trawler,Escravos-Lagos,February,81.1,Diesel,1676.37,4551.99,Calm,73.74
+Fishing Trawler,Port Harcourt-Lagos,March,128.07,Diesel,2757.52,7080.94,Moderate,77.46
+Fishing Trawler,Warri-Bonny,April,154.35,HFO,3306.69,9001.61,Calm,81.47
+Fishing Trawler,Port Harcourt-Lagos,May,62.4,HFO,1532.24,4508.11,Moderate,89.19
+Fishing Trawler,Escravos-Lagos,June,137.36,Diesel,4084.15,12004.96,Moderate,75.74
+Fishing Trawler,Warri-Bonny,July,88.13,HFO,2396.21,6237.38,Calm,90.36
+Fishing Trawler,Lagos-Apapa,August,107.32,Diesel,2272.15,5827.09,Stormy,81.78
+Fishing Trawler,Lagos-Apapa,September,98.99,Diesel,2335.15,6320.38,Stormy,82.2
+Fishing Trawler,Escravos-Lagos,October,62.6,Diesel,1657.06,4584.55,Calm,75.0
+Fishing Trawler,Warri-Bonny,November,183.26,HFO,5053.0,14336.02,Stormy,86.44
+Fishing Trawler,Lagos-Apapa,December,186.24,HFO,4126.02,11848.02,Moderate,88.95
+Oil Service Boat,Port Harcourt-Lagos,January,90.65,Diesel,2783.15,7069.54,Stormy,83.06
+Oil Service Boat,Escravos-Lagos,February,48.59,Diesel,1534.2,3988.68,Moderate,76.16
+Oil Service Boat,Warri-Bonny,March,83.5,HFO,2747.89,6890.03,Calm,85.25
+Oil Service Boat,Escravos-Lagos,April,119.57,HFO,3891.75,11542.58,Moderate,78.39
+Oil Service Boat,Port Harcourt-Lagos,May,60.98,Diesel,1696.71,4274.08,Moderate,71.3
+Oil Service Boat,Lagos-Apapa,June,81.81,Diesel,2093.66,5370.7,Calm,93.57
+Oil Service Boat,Escravos-Lagos,July,110.71,HFO,3845.02,11138.28,Calm,93.43
+Oil Service Boat,Escravos-Lagos,August,121.72,Diesel,3831.8,10048.57,Moderate,92.94
+Oil Service Boat,Warri-Bonny,September,142.86,Diesel,4884.56,13363.5,Stormy,75.35
+Oil Service Boat,Warri-Bonny,October,103.58,HFO,2959.76,7488.96,Moderate,76.28
+Oil Service Boat,Port Harcourt-Lagos,November,144.37,Diesel,4870.22,14012.52,Moderate,82.7
+Oil Service Boat,Escravos-Lagos,December,149.15,HFO,3895.54,10065.87,Calm,91.1
+Oil Service Boat,Port Harcourt-Lagos,January,136.93,HFO,3806.64,10385.96,Moderate,89.91
+Oil Service Boat,Lagos-Apapa,February,88.8,Diesel,2674.29,6995.11,Calm,82.53
+Oil Service Boat,Port Harcourt-Lagos,March,60.34,HFO,1905.53,5705.65,Calm,84.82
+Oil Service Boat,Escravos-Lagos,April,32.47,HFO,1024.21,2905.11,Calm,84.33
+Oil Service Boat,Escravos-Lagos,May,68.69,HFO,2319.58,6734.34,Moderate,93.0
+Oil Service Boat,Port Harcourt-Lagos,June,21.11,HFO,721.9,1819.61,Calm,73.01
+Oil Service Boat,Lagos-Apapa,July,133.48,HFO,4108.29,11145.18,Stormy,80.55
+Oil Service Boat,Escravos-Lagos,August,61.37,HFO,1970.45,5186.55,Stormy,83.42
+Oil Service Boat,Escravos-Lagos,September,21.02,Diesel,544.52,1402.74,Stormy,92.55
+Oil Service Boat,Escravos-Lagos,October,30.86,HFO,795.85,2162.22,Calm,93.78
+Oil Service Boat,Port Harcourt-Lagos,November,58.52,HFO,1944.49,5633.39,Moderate,94.66
+Oil Service Boat,Escravos-Lagos,December,143.98,HFO,4230.35,12110.97,Calm,75.9
+Surfer Boat,Port Harcourt-Lagos,January,90.07,Diesel,1643.8,4177.75,Calm,83.13
+Surfer Boat,Lagos-Apapa,February,104.75,Diesel,1529.23,4346.19,Calm,78.14
+Surfer Boat,Port Harcourt-Lagos,March,168.82,Diesel,2517.72,6599.34,Moderate,87.8
+Surfer Boat,Lagos-Apapa,April,171.93,Diesel,1925.52,5267.3,Moderate,80.69
+Surfer Boat,Escravos-Lagos,May,118.67,Diesel,1885.6,4954.32,Moderate,78.91
+Surfer Boat,Escravos-Lagos,June,21.42,Diesel,237.88,615.68,Moderate,71.97
+Surfer Boat,Lagos-Apapa,July,195.28,Diesel,3310.69,9584.45,Calm,81.38
+Surfer Boat,Port Harcourt-Lagos,August,44.06,Diesel,855.01,2183.19,Calm,81.73
+Surfer Boat,Warri-Bonny,September,95.11,Diesel,1837.37,5231.88,Moderate,86.8
+Surfer Boat,Escravos-Lagos,October,138.09,Diesel,1380.9,4000.98,Moderate,88.86
+Surfer Boat,Escravos-Lagos,November,81.49,Diesel,1538.19,4219.42,Stormy,80.39
+Surfer Boat,Port Harcourt-Lagos,December,157.85,Diesel,2487.33,6948.34,Moderate,85.78
+Fishing Trawler,Escravos-Lagos,January,61.79,Diesel,1321.95,3543.18,Calm,74.4
+Fishing Trawler,Lagos-Apapa,February,182.5,HFO,4670.49,13733.9,Calm,84.02
+Fishing Trawler,Escravos-Lagos,March,113.34,Diesel,3096.19,8236.87,Calm,74.98
+Fishing Trawler,Escravos-Lagos,April,85.65,HFO,2452.83,6883.49,Moderate,88.95
+Fishing Trawler,Warri-Bonny,May,148.86,HFO,3307.48,9172.08,Stormy,70.25
+Fishing Trawler,Lagos-Apapa,June,164.39,HFO,3524.04,9320.88,Calm,75.4
+Fishing Trawler,Escravos-Lagos,July,119.05,HFO,3416.24,10224.84,Calm,87.62
+Fishing Trawler,Escravos-Lagos,August,52.56,Diesel,1419.24,3732.3,Stormy,77.32
+Fishing Trawler,Warri-Bonny,September,158.36,Diesel,4570.2,12345.24,Stormy,74.91
+Fishing Trawler,Escravos-Lagos,October,108.0,HFO,2533.47,7178.08,Calm,77.77
+Fishing Trawler,Port Harcourt-Lagos,November,173.47,Diesel,3601.39,9937.12,Moderate,76.9
+Fishing Trawler,Port Harcourt-Lagos,December,101.87,Diesel,2406.96,6145.38,Moderate,73.78
+Tanker Ship,Lagos-Apapa,January,258.1,Diesel,10645.34,29836.94,Stormy,88.54
+Tanker Ship,Port Harcourt-Lagos,February,154.45,HFO,6451.83,17408.53,Moderate,75.97
+Tanker Ship,Port Harcourt-Lagos,March,231.15,HFO,11515.41,33303.18,Stormy,83.24
+Tanker Ship,Escravos-Lagos,April,85.55,Diesel,4033.13,10949.78,Moderate,78.25
+Tanker Ship,Escravos-Lagos,May,458.6,Diesel,19850.2,55944.19,Stormy,77.01
+Tanker Ship,Escravos-Lagos,June,306.63,Diesel,11197.49,29374.7,Stormy,78.56
+Tanker Ship,Port Harcourt-Lagos,July,59.63,Diesel,2627.45,7823.19,Stormy,73.43
+Tanker Ship,Warri-Bonny,August,186.6,HFO,6118.08,15629.37,Stormy,83.1
+Tanker Ship,Port Harcourt-Lagos,September,193.61,Diesel,7705.56,21396.09,Calm,89.47
+Tanker Ship,Port Harcourt-Lagos,October,463.72,Diesel,16628.78,42143.32,Calm,82.44
+Tanker Ship,Lagos-Apapa,November,81.68,HFO,3169.97,8824.29,Stormy,78.3
+Tanker Ship,Warri-Bonny,December,56.97,HFO,2726.68,6889.4,Stormy,70.06
+Tanker Ship,Escravos-Lagos,January,66.84,HFO,2565.72,7522.32,Stormy,89.61
+Tanker Ship,Port Harcourt-Lagos,February,381.96,Diesel,12970.85,37498.24,Calm,85.12
+Tanker Ship,Port Harcourt-Lagos,March,363.68,Diesel,12802.55,34976.27,Stormy,86.87
+Tanker Ship,Warri-Bonny,April,333.76,Diesel,14351.64,37793.69,Calm,70.7
+Tanker Ship,Lagos-Apapa,May,437.8,Diesel,13673.2,40889.77,Stormy,77.9
+Tanker Ship,Lagos-Apapa,June,69.56,HFO,2858.44,7289.6,Calm,92.39
+Tanker Ship,Escravos-Lagos,July,332.91,HFO,11325.98,29550.99,Calm,78.96
+Tanker Ship,Port Harcourt-Lagos,August,422.29,Diesel,16497.91,44354.24,Moderate,84.8
+Tanker Ship,Escravos-Lagos,September,310.5,Diesel,13078.11,34316.03,Moderate,92.14
+Tanker Ship,Lagos-Apapa,October,325.38,Diesel,12095.61,32625.19,Calm,74.02
+Tanker Ship,Port Harcourt-Lagos,November,207.58,Diesel,8808.92,24198.72,Stormy,72.44
+Tanker Ship,Port Harcourt-Lagos,December,106.48,HFO,4324.16,12260.96,Stormy,89.38
+Surfer Boat,Port Harcourt-Lagos,January,146.74,Diesel,2126.09,5566.51,Moderate,83.14
+Surfer Boat,Escravos-Lagos,February,130.97,Diesel,1731.78,4479.48,Stormy,89.33
+Surfer Boat,Escravos-Lagos,March,117.09,Diesel,1762.98,4855.32,Moderate,89.97
+Surfer Boat,Lagos-Apapa,April,183.03,Diesel,2093.83,5849.03,Stormy,87.29
+Surfer Boat,Port Harcourt-Lagos,May,150.55,Diesel,2880.38,7966.11,Moderate,71.64
+Surfer Boat,Port Harcourt-Lagos,June,31.27,Diesel,589.65,1721.34,Stormy,75.56
+Surfer Boat,Warri-Bonny,July,199.91,Diesel,2107.61,6280.82,Stormy,92.46
+Surfer Boat,Port Harcourt-Lagos,August,87.18,Diesel,1384.68,4079.34,Stormy,88.56
+Surfer Boat,Port Harcourt-Lagos,September,105.12,Diesel,2096.23,5243.89,Moderate,78.14
+Surfer Boat,Port Harcourt-Lagos,October,32.5,Diesel,466.75,1356.68,Moderate,86.15
+Surfer Boat,Escravos-Lagos,November,127.28,Diesel,1910.31,5518.55,Moderate,86.08
+Surfer Boat,Port Harcourt-Lagos,December,169.85,Diesel,2827.56,7755.53,Moderate,86.52
+Surfer Boat,Warri-Bonny,January,188.84,Diesel,2049.82,5911.82,Stormy,80.93
+Surfer Boat,Warri-Bonny,February,165.63,Diesel,1971.63,5203.97,Moderate,83.62
+Surfer Boat,Warri-Bonny,March,86.77,Diesel,1132.71,2863.17,Moderate,70.81
+Surfer Boat,Port Harcourt-Lagos,April,97.27,Diesel,1731.31,4462.29,Calm,91.26
+Surfer Boat,Escravos-Lagos,May,184.51,Diesel,3578.44,9582.76,Calm,75.73
+Surfer Boat,Lagos-Apapa,June,127.45,Diesel,1744.33,4976.68,Moderate,94.38
+Surfer Boat,Warri-Bonny,July,23.36,Diesel,443.54,1174.66,Stormy,94.56
+Surfer Boat,Port Harcourt-Lagos,August,165.73,Diesel,2969.75,8368.33,Moderate,92.37
+Surfer Boat,Port Harcourt-Lagos,September,197.25,Diesel,3848.79,10996.97,Calm,71.0
+Surfer Boat,Port Harcourt-Lagos,October,175.84,Diesel,2365.94,6011.87,Calm,82.52
+Surfer Boat,Lagos-Apapa,November,64.04,Diesel,1279.31,3318.05,Calm,85.89
+Surfer Boat,Lagos-Apapa,December,94.2,Diesel,1308.08,3552.13,Moderate,77.1
+Surfer Boat,Port Harcourt-Lagos,January,114.52,Diesel,1818.79,4779.11,Stormy,74.26
+Surfer Boat,Lagos-Apapa,February,105.11,Diesel,1822.47,5455.24,Stormy,77.82
+Surfer Boat,Warri-Bonny,March,50.68,Diesel,658.4,1848.7,Moderate,83.5
+Surfer Boat,Lagos-Apapa,April,199.16,Diesel,3830.8,10853.6,Calm,80.75
+Surfer Boat,Escravos-Lagos,May,175.73,Diesel,1933.1,4847.72,Stormy,92.99
+Surfer Boat,Warri-Bonny,June,48.53,Diesel,696.44,1886.5,Stormy,87.03
+Surfer Boat,Escravos-Lagos,July,26.09,Diesel,292.06,846.15,Moderate,88.67
+Surfer Boat,Warri-Bonny,August,24.71,Diesel,410.23,1121.76,Stormy,92.46
+Surfer Boat,Port Harcourt-Lagos,September,150.33,Diesel,1751.98,5123.13,Moderate,78.43
+Surfer Boat,Lagos-Apapa,October,158.68,Diesel,2897.68,8586.74,Moderate,85.79
+Surfer Boat,Escravos-Lagos,November,175.33,Diesel,3327.01,9168.96,Stormy,80.05
+Surfer Boat,Warri-Bonny,December,64.1,Diesel,1052.86,2719.52,Moderate,71.07
+Oil Service Boat,Port Harcourt-Lagos,January,55.09,HFO,1408.66,4200.17,Moderate,82.32
+Oil Service Boat,Warri-Bonny,February,99.99,Diesel,2906.95,7690.27,Stormy,70.61
+Oil Service Boat,Lagos-Apapa,March,131.58,HFO,3955.59,10211.7,Moderate,94.5
+Oil Service Boat,Port Harcourt-Lagos,April,68.15,Diesel,2345.47,5871.23,Calm,80.78
+Oil Service Boat,Lagos-Apapa,May,93.39,Diesel,2502.02,7276.76,Moderate,94.24
+Oil Service Boat,Port Harcourt-Lagos,June,124.49,HFO,3699.02,10719.74,Moderate,82.55
+Oil Service Boat,Escravos-Lagos,July,84.89,HFO,2964.84,8041.75,Moderate,92.3
+Oil Service Boat,Warri-Bonny,August,78.78,Diesel,2209.73,5967.94,Stormy,77.9
+Oil Service Boat,Lagos-Apapa,September,67.77,Diesel,1944.87,4987.0,Calm,72.88
+Oil Service Boat,Escravos-Lagos,October,85.83,HFO,2479.44,6756.23,Stormy,76.2
+Oil Service Boat,Escravos-Lagos,November,144.88,Diesel,4381.91,12877.71,Calm,80.26
+Oil Service Boat,Warri-Bonny,December,28.52,Diesel,837.14,2117.77,Calm,77.11
+Oil Service Boat,Lagos-Apapa,January,47.93,HFO,1662.33,4601.41,Calm,78.61
+Oil Service Boat,Port Harcourt-Lagos,February,26.53,Diesel,676.37,1862.64,Stormy,80.25
+Oil Service Boat,Port Harcourt-Lagos,March,117.71,Diesel,3981.33,10293.55,Moderate,73.32
+Oil Service Boat,Warri-Bonny,April,67.04,HFO,2312.5,5941.35,Stormy,87.78
+Oil Service Boat,Escravos-Lagos,May,107.12,HFO,2710.02,7246.43,Moderate,84.63
+Oil Service Boat,Warri-Bonny,June,91.89,HFO,2603.57,7542.46,Moderate,85.75
+Oil Service Boat,Lagos-Apapa,July,70.54,HFO,2012.44,5988.92,Calm,83.83
+Oil Service Boat,Lagos-Apapa,August,118.59,Diesel,3849.79,10891.74,Stormy,93.36
+Oil Service Boat,Port Harcourt-Lagos,September,126.17,Diesel,3333.38,9719.29,Calm,90.27
+Oil Service Boat,Warri-Bonny,October,111.52,HFO,3415.0,8888.06,Stormy,88.85
+Oil Service Boat,Lagos-Apapa,November,121.05,Diesel,3612.88,9497.04,Stormy,91.71
+Oil Service Boat,Warri-Bonny,December,126.45,HFO,4389.29,12427.05,Moderate,78.75
+Oil Service Boat,Port Harcourt-Lagos,January,146.92,Diesel,5121.13,15049.01,Moderate,94.16
+Oil Service Boat,Lagos-Apapa,February,39.14,Diesel,1233.0,3218.9,Calm,76.4
+Oil Service Boat,Port Harcourt-Lagos,March,29.32,Diesel,998.43,2747.25,Stormy,88.73
+Oil Service Boat,Lagos-Apapa,April,23.48,Diesel,732.26,2166.04,Stormy,84.96
+Oil Service Boat,Escravos-Lagos,May,118.88,HFO,3596.44,10409.53,Calm,90.43
+Oil Service Boat,Port Harcourt-Lagos,June,115.76,Diesel,3774.67,10605.85,Stormy,73.54
+Oil Service Boat,Escravos-Lagos,July,64.62,Diesel,1758.28,5032.19,Calm,89.78
+Oil Service Boat,Warri-Bonny,August,85.26,HFO,2400.19,6743.53,Calm,93.51
+Oil Service Boat,Port Harcourt-Lagos,September,85.23,HFO,2677.39,6900.6,Calm,93.14
+Oil Service Boat,Escravos-Lagos,October,64.89,HFO,1678.35,4623.88,Moderate,86.2
+Oil Service Boat,Port Harcourt-Lagos,November,100.23,HFO,2767.53,8050.61,Calm,84.45
+Oil Service Boat,Port Harcourt-Lagos,December,119.56,HFO,4142.67,11416.1,Stormy,81.55
+Fishing Trawler,Escravos-Lagos,January,101.68,HFO,2793.46,7184.56,Calm,92.42
+Fishing Trawler,Port Harcourt-Lagos,February,199.96,Diesel,4021.1,10911.15,Moderate,87.14
+Fishing Trawler,Lagos-Apapa,March,94.58,Diesel,2666.11,7378.24,Stormy,77.79
+Fishing Trawler,Warri-Bonny,April,158.15,Diesel,3700.15,10297.38,Calm,90.28
+Fishing Trawler,Escravos-Lagos,May,81.07,Diesel,1858.1,4924.22,Stormy,90.41
+Fishing Trawler,Lagos-Apapa,June,79.62,HFO,1986.7,5203.26,Moderate,84.6
+Fishing Trawler,Warri-Bonny,July,187.55,HFO,5232.01,14232.56,Calm,94.95
+Fishing Trawler,Escravos-Lagos,August,86.36,HFO,2029.35,5125.13,Moderate,76.68
+Fishing Trawler,Warri-Bonny,September,116.35,HFO,2873.5,8355.64,Calm,76.55
+Fishing Trawler,Lagos-Apapa,October,67.59,Diesel,1892.97,4751.55,Moderate,93.61
+Fishing Trawler,Port Harcourt-Lagos,November,176.6,HFO,4402.43,11452.53,Stormy,74.52
+Fishing Trawler,Escravos-Lagos,December,68.35,HFO,1878.34,5420.74,Moderate,75.12
+Fishing Trawler,Escravos-Lagos,January,132.29,Diesel,2716.79,7866.08,Moderate,90.86
+Fishing Trawler,Lagos-Apapa,February,51.81,HFO,1039.12,3111.21,Calm,84.32
+Fishing Trawler,Escravos-Lagos,March,89.31,HFO,2369.8,6149.52,Stormy,77.07
+Fishing Trawler,Port Harcourt-Lagos,April,187.46,HFO,3835.13,10239.12,Calm,93.94
+Fishing Trawler,Escravos-Lagos,May,111.39,Diesel,2602.31,7576.72,Moderate,83.11
+Fishing Trawler,Lagos-Apapa,June,191.89,HFO,5177.11,13613.37,Moderate,79.38
+Fishing Trawler,Port Harcourt-Lagos,July,166.94,Diesel,4915.84,12342.39,Moderate,83.32
+Fishing Trawler,Lagos-Apapa,August,148.18,HFO,3825.68,11078.16,Stormy,89.11
+Fishing Trawler,Escravos-Lagos,September,119.4,Diesel,2824.31,7869.76,Stormy,85.51
+Fishing Trawler,Warri-Bonny,October,142.52,Diesel,4099.56,10682.85,Moderate,94.15
+Fishing Trawler,Escravos-Lagos,November,187.75,HFO,4923.14,12777.45,Moderate,72.93
+Fishing Trawler,Escravos-Lagos,December,53.55,Diesel,1197.72,3572.73,Calm,94.17
+Tanker Ship,Escravos-Lagos,January,171.96,HFO,7696.07,22267.76,Stormy,73.12
+Tanker Ship,Lagos-Apapa,February,383.81,HFO,16125.04,42062.28,Moderate,88.24
+Tanker Ship,Lagos-Apapa,March,408.78,Diesel,20142.24,55430.99,Moderate,74.94
+Tanker Ship,Port Harcourt-Lagos,April,372.93,Diesel,18326.36,48909.52,Calm,86.19
+Tanker Ship,Lagos-Apapa,May,292.04,HFO,10331.73,27821.87,Stormy,85.86
+Tanker Ship,Warri-Bonny,June,117.82,HFO,5707.91,14413.15,Calm,83.83
+Tanker Ship,Warri-Bonny,July,92.48,Diesel,4429.88,12715.49,Stormy,73.82
+Tanker Ship,Warri-Bonny,August,69.7,Diesel,3386.72,9832.32,Moderate,77.13
+Tanker Ship,Escravos-Lagos,September,475.63,HFO,22247.76,56342.15,Calm,78.67
+Tanker Ship,Port Harcourt-Lagos,October,116.15,HFO,5254.53,13948.14,Calm,76.24
+Tanker Ship,Port Harcourt-Lagos,November,177.01,HFO,5669.94,15461.03,Calm,87.45
+Tanker Ship,Lagos-Apapa,December,244.89,HFO,8039.88,23906.87,Moderate,75.49
+Surfer Boat,Port Harcourt-Lagos,January,157.98,Diesel,2983.79,8730.0,Stormy,90.67
+Surfer Boat,Warri-Bonny,February,109.14,Diesel,1860.07,5489.9,Calm,75.85
+Surfer Boat,Warri-Bonny,March,75.36,Diesel,770.06,2279.77,Calm,73.9
+Surfer Boat,Escravos-Lagos,April,144.38,Diesel,2874.01,8475.32,Moderate,90.36
+Surfer Boat,Lagos-Apapa,May,28.32,Diesel,405.49,1216.32,Moderate,70.81
+Surfer Boat,Lagos-Apapa,June,63.5,Diesel,1112.56,2965.24,Moderate,75.42
+Surfer Boat,Escravos-Lagos,July,105.68,Diesel,1225.76,3677.26,Moderate,85.23
+Surfer Boat,Escravos-Lagos,August,75.9,Diesel,1484.89,4275.36,Stormy,78.89
+Surfer Boat,Port Harcourt-Lagos,September,46.62,Diesel,791.1,2345.86,Calm,81.54
+Surfer Boat,Escravos-Lagos,October,56.33,Diesel,985.87,2704.94,Stormy,73.96
+Surfer Boat,Escravos-Lagos,November,164.18,Diesel,1851.71,5219.49,Stormy,78.36
+Surfer Boat,Lagos-Apapa,December,121.94,Diesel,1760.87,4856.47,Calm,74.12
+Surfer Boat,Escravos-Lagos,January,148.03,Diesel,2671.57,6750.47,Moderate,79.66
+Surfer Boat,Lagos-Apapa,February,86.91,Diesel,1615.6,4573.48,Calm,77.17
+Surfer Boat,Lagos-Apapa,March,23.21,Diesel,375.51,997.36,Stormy,81.62
+Surfer Boat,Port Harcourt-Lagos,April,154.44,Diesel,2602.87,7006.15,Moderate,75.89
+Surfer Boat,Warri-Bonny,May,174.09,Diesel,1930.22,5140.13,Calm,72.94
+Surfer Boat,Lagos-Apapa,June,172.91,Diesel,2179.67,6116.69,Moderate,75.24
+Surfer Boat,Escravos-Lagos,July,122.24,Diesel,1615.42,4300.22,Stormy,90.72
+Surfer Boat,Lagos-Apapa,August,20.17,Diesel,295.6,875.06,Calm,74.15
+Surfer Boat,Port Harcourt-Lagos,September,67.19,Diesel,877.02,2600.05,Moderate,79.11
+Surfer Boat,Warri-Bonny,October,70.84,Diesel,798.14,2298.23,Stormy,84.14
+Surfer Boat,Lagos-Apapa,November,65.15,Diesel,843.1,2134.62,Stormy,89.9
+Surfer Boat,Warri-Bonny,December,103.85,Diesel,1832.07,4652.71,Moderate,89.19
+Surfer Boat,Lagos-Apapa,January,187.27,Diesel,2388.84,6328.9,Moderate,77.64
+Surfer Boat,Escravos-Lagos,February,113.78,Diesel,1468.61,3710.26,Stormy,81.55
+Surfer Boat,Escravos-Lagos,March,132.24,Diesel,1676.65,4388.44,Moderate,87.5
+Surfer Boat,Lagos-Apapa,April,193.96,Diesel,3801.36,10219.15,Stormy,80.94
+Surfer Boat,Warri-Bonny,May,174.52,Diesel,2937.26,8570.03,Moderate,92.95
+Surfer Boat,Escravos-Lagos,June,99.31,Diesel,1821.48,4973.91,Calm,86.53
+Surfer Boat,Warri-Bonny,July,193.19,Diesel,1944.93,4955.1,Calm,83.8
+Surfer Boat,Escravos-Lagos,August,179.92,Diesel,2780.87,8292.72,Stormy,79.58
+Surfer Boat,Lagos-Apapa,September,50.37,Diesel,691.5,1917.17,Stormy,72.06
+Surfer Boat,Escravos-Lagos,October,43.41,Diesel,471.13,1380.11,Calm,74.96
+Surfer Boat,Warri-Bonny,November,191.46,Diesel,2787.83,7494.27,Moderate,70.7
+Surfer Boat,Port Harcourt-Lagos,December,49.69,Diesel,520.64,1501.79,Stormy,77.91
+Oil Service Boat,Escravos-Lagos,January,59.52,Diesel,1800.86,4872.78,Stormy,72.45
+Oil Service Boat,Port Harcourt-Lagos,February,92.18,Diesel,2815.73,8179.9,Stormy,72.65
+Oil Service Boat,Lagos-Apapa,March,110.46,HFO,3658.66,9828.24,Moderate,82.94
+Oil Service Boat,Lagos-Apapa,April,147.09,Diesel,4178.51,11146.45,Calm,75.07
+Oil Service Boat,Port Harcourt-Lagos,May,44.07,Diesel,1541.1,4528.65,Calm,84.94
+Oil Service Boat,Escravos-Lagos,June,113.41,Diesel,2946.84,8159.76,Moderate,84.21
+Oil Service Boat,Escravos-Lagos,July,52.62,HFO,1759.79,4914.79,Calm,91.97
+Oil Service Boat,Port Harcourt-Lagos,August,30.08,Diesel,772.37,2267.33,Moderate,92.52
+Oil Service Boat,Warri-Bonny,September,70.57,HFO,2412.31,6462.97,Stormy,94.07
+Oil Service Boat,Lagos-Apapa,October,35.59,HFO,1040.58,3024.33,Stormy,70.09
+Oil Service Boat,Port Harcourt-Lagos,November,98.74,HFO,3052.3,9012.88,Calm,87.67
+Oil Service Boat,Port Harcourt-Lagos,December,37.23,Diesel,1072.47,2997.1,Moderate,82.04
+Surfer Boat,Escravos-Lagos,January,187.13,Diesel,1918.53,5697.89,Stormy,94.1
+Surfer Boat,Warri-Bonny,February,51.93,Diesel,1013.32,2900.07,Stormy,70.74
+Surfer Boat,Port Harcourt-Lagos,March,190.81,Diesel,3625.49,10853.63,Stormy,90.34
+Surfer Boat,Escravos-Lagos,April,151.15,Diesel,2003.5,5368.57,Moderate,78.2
+Surfer Boat,Port Harcourt-Lagos,May,139.23,Diesel,1738.64,4766.71,Calm,87.09
+Surfer Boat,Escravos-Lagos,June,46.37,Diesel,714.02,2063.99,Moderate,86.22
+Surfer Boat,Warri-Bonny,July,78.62,Diesel,1219.65,3397.84,Moderate,90.25
+Surfer Boat,Port Harcourt-Lagos,August,125.45,Diesel,2272.09,6553.13,Stormy,91.54
+Surfer Boat,Warri-Bonny,September,79.49,Diesel,1136.55,2915.83,Stormy,91.16
+Surfer Boat,Lagos-Apapa,October,126.31,Diesel,2380.95,6170.53,Stormy,94.4
+Surfer Boat,Warri-Bonny,November,160.29,Diesel,2207.52,6481.07,Calm,71.98
+Surfer Boat,Lagos-Apapa,December,95.66,Diesel,960.55,2703.76,Stormy,77.95
+Surfer Boat,Port Harcourt-Lagos,January,180.42,Diesel,2284.77,6299.75,Calm,90.55
+Surfer Boat,Lagos-Apapa,February,197.7,Diesel,3234.04,8590.57,Stormy,84.67
+Surfer Boat,Port Harcourt-Lagos,March,171.08,Diesel,2267.65,5864.26,Calm,94.79
+Surfer Boat,Port Harcourt-Lagos,April,60.37,Diesel,1149.66,3203.68,Calm,75.57
+Surfer Boat,Lagos-Apapa,May,81.84,Diesel,980.41,2749.59,Stormy,91.28
+Surfer Boat,Warri-Bonny,June,80.68,Diesel,1171.35,3385.44,Calm,91.7
+Surfer Boat,Warri-Bonny,July,179.28,Diesel,2790.12,7202.32,Stormy,84.27
+Surfer Boat,Port Harcourt-Lagos,August,144.84,Diesel,2622.04,7812.16,Calm,74.05
+Surfer Boat,Escravos-Lagos,September,57.14,Diesel,992.15,2951.26,Calm,92.83
+Surfer Boat,Port Harcourt-Lagos,October,124.1,Diesel,2387.68,6418.96,Moderate,81.15
+Surfer Boat,Escravos-Lagos,November,60.21,Diesel,1050.64,2935.95,Moderate,76.89
+Surfer Boat,Warri-Bonny,December,69.27,Diesel,1180.37,3338.66,Stormy,73.11
+Surfer Boat,Escravos-Lagos,January,163.47,Diesel,2741.49,7981.01,Calm,74.43
+Surfer Boat,Port Harcourt-Lagos,February,129.25,Diesel,1883.47,5440.37,Stormy,81.81
+Surfer Boat,Escravos-Lagos,March,119.72,Diesel,2030.76,5460.1,Moderate,91.68
+Surfer Boat,Escravos-Lagos,April,38.54,Diesel,555.25,1400.28,Moderate,87.03
+Surfer Boat,Escravos-Lagos,May,23.76,Diesel,468.04,1265.21,Moderate,74.35
+Surfer Boat,Lagos-Apapa,June,89.14,Diesel,1751.3,4823.63,Calm,81.0
+Surfer Boat,Port Harcourt-Lagos,July,137.0,Diesel,2669.35,6928.17,Stormy,87.28
+Surfer Boat,Escravos-Lagos,August,169.2,Diesel,1787.38,4687.42,Calm,75.98
+Surfer Boat,Escravos-Lagos,September,45.17,Diesel,865.06,2237.4,Stormy,72.07
+Surfer Boat,Port Harcourt-Lagos,October,82.46,Diesel,1230.39,3448.38,Calm,89.92
+Surfer Boat,Warri-Bonny,November,126.66,Diesel,2078.77,5247.86,Stormy,89.45
+Surfer Boat,Lagos-Apapa,December,144.01,Diesel,2399.85,6412.24,Stormy,84.14
+Tanker Ship,Escravos-Lagos,January,77.19,Diesel,3131.51,8752.98,Moderate,81.04
+Tanker Ship,Warri-Bonny,February,243.28,HFO,9038.03,25227.41,Stormy,74.83
+Tanker Ship,Lagos-Apapa,March,453.83,HFO,17404.94,45190.91,Moderate,89.89
+Tanker Ship,Escravos-Lagos,April,207.53,Diesel,7806.06,22183.19,Moderate,84.73
+Tanker Ship,Warri-Bonny,May,62.2,Diesel,2874.09,7641.37,Moderate,85.0
+Tanker Ship,Port Harcourt-Lagos,June,142.76,HFO,4899.45,14421.91,Stormy,81.01
+Tanker Ship,Port Harcourt-Lagos,July,253.8,HFO,12185.93,35945.35,Calm,72.7
+Tanker Ship,Warri-Bonny,August,176.67,HFO,7258.74,19062.48,Stormy,71.3
+Tanker Ship,Lagos-Apapa,September,66.82,Diesel,3056.87,9104.18,Stormy,85.12
+Tanker Ship,Lagos-Apapa,October,399.87,HFO,13817.8,37600.94,Stormy,91.96
+Tanker Ship,Escravos-Lagos,November,416.07,Diesel,14544.62,42433.93,Stormy,74.5
+Tanker Ship,Escravos-Lagos,December,68.69,Diesel,3216.95,8988.45,Calm,93.26
+Tanker Ship,Lagos-Apapa,January,267.88,HFO,9252.96,26697.86,Calm,73.49
+Tanker Ship,Port Harcourt-Lagos,February,465.49,HFO,20556.7,60920.09,Calm,82.08
+Tanker Ship,Port Harcourt-Lagos,March,330.35,HFO,15960.43,46119.36,Stormy,86.26
+Tanker Ship,Escravos-Lagos,April,161.34,Diesel,7870.63,22843.57,Moderate,80.3
+Tanker Ship,Warri-Bonny,May,232.27,Diesel,7034.51,19204.83,Moderate,85.97
+Tanker Ship,Lagos-Apapa,June,103.37,HFO,4220.68,11232.43,Calm,89.12
+Tanker Ship,Lagos-Apapa,July,320.47,HFO,11490.16,31076.91,Calm,81.36
+Tanker Ship,Port Harcourt-Lagos,August,120.15,Diesel,3877.23,9714.02,Stormy,78.69
+Tanker Ship,Warri-Bonny,September,251.97,Diesel,7896.53,21422.33,Moderate,76.72
+Tanker Ship,Lagos-Apapa,October,307.97,HFO,12059.77,31860.34,Moderate,93.58
+Tanker Ship,Lagos-Apapa,November,462.52,Diesel,14128.67,40574.49,Calm,81.71
+Tanker Ship,Lagos-Apapa,December,320.74,Diesel,16008.0,40637.91,Calm,92.27
+Tanker Ship,Escravos-Lagos,January,148.58,HFO,5163.7,13191.85,Moderate,84.93
+Tanker Ship,Port Harcourt-Lagos,February,90.38,Diesel,4350.46,12883.82,Calm,72.7
+Tanker Ship,Warri-Bonny,March,58.17,Diesel,2728.82,6977.16,Stormy,81.47
+Tanker Ship,Port Harcourt-Lagos,April,333.44,HFO,14802.53,41314.24,Moderate,70.45
+Tanker Ship,Warri-Bonny,May,452.15,HFO,18743.19,52807.05,Stormy,89.38
+Tanker Ship,Port Harcourt-Lagos,June,279.88,HFO,8483.17,21277.81,Moderate,80.97
+Tanker Ship,Port Harcourt-Lagos,July,185.85,HFO,6884.76,17508.55,Stormy,90.1
+Tanker Ship,Lagos-Apapa,August,81.84,HFO,3055.6,8005.1,Moderate,93.35
+Tanker Ship,Escravos-Lagos,September,230.08,HFO,8905.68,26589.92,Calm,75.04
+Tanker Ship,Lagos-Apapa,October,282.19,Diesel,14045.68,38193.1,Calm,91.02
+Tanker Ship,Escravos-Lagos,November,185.19,Diesel,8175.88,22304.34,Moderate,91.27
+Tanker Ship,Warri-Bonny,December,481.67,HFO,15911.57,42203.88,Moderate,84.52
+Tanker Ship,Warri-Bonny,January,192.84,HFO,9328.95,25411.01,Calm,83.9
+Tanker Ship,Port Harcourt-Lagos,February,211.68,Diesel,9088.85,23878.21,Stormy,78.66
+Tanker Ship,Escravos-Lagos,March,289.84,Diesel,10465.89,28625.09,Stormy,82.11
+Tanker Ship,Lagos-Apapa,April,454.15,Diesel,18784.2,53656.42,Stormy,72.13
+Tanker Ship,Escravos-Lagos,May,393.74,Diesel,18660.57,54837.02,Moderate,92.6
+Tanker Ship,Lagos-Apapa,June,469.28,HFO,17118.08,50082.77,Calm,82.77
+Tanker Ship,Warri-Bonny,July,140.09,HFO,4641.73,11604.78,Stormy,91.06
+Tanker Ship,Escravos-Lagos,August,414.11,HFO,13626.34,34915.34,Calm,71.82
+Tanker Ship,Port Harcourt-Lagos,September,389.15,Diesel,15908.01,44204.29,Moderate,89.8
+Tanker Ship,Escravos-Lagos,October,88.25,HFO,4214.07,11879.74,Moderate,79.03
+Tanker Ship,Port Harcourt-Lagos,November,170.38,HFO,8422.97,23552.11,Calm,93.39
+Tanker Ship,Warri-Bonny,December,142.08,Diesel,4872.73,13726.32,Moderate,80.25
+Fishing Trawler,Escravos-Lagos,January,106.4,Diesel,3047.0,8001.56,Moderate,73.99
+Fishing Trawler,Warri-Bonny,February,139.73,HFO,3319.94,8917.37,Stormy,72.7
+Fishing Trawler,Warri-Bonny,March,136.37,Diesel,4059.66,10785.67,Moderate,71.33
+Fishing Trawler,Warri-Bonny,April,146.14,HFO,3782.79,11343.26,Stormy,87.81
+Fishing Trawler,Port Harcourt-Lagos,May,57.37,HFO,1419.7,3712.48,Calm,92.86
+Fishing Trawler,Warri-Bonny,June,129.53,HFO,3721.17,9307.06,Stormy,90.37
+Fishing Trawler,Escravos-Lagos,July,133.44,Diesel,3730.77,11044.08,Moderate,89.43
+Fishing Trawler,Port Harcourt-Lagos,August,63.84,Diesel,1633.85,4852.28,Stormy,75.88
+Fishing Trawler,Lagos-Apapa,September,61.43,HFO,1263.48,3571.13,Calm,78.0
+Fishing Trawler,Port Harcourt-Lagos,October,193.09,HFO,4661.63,12267.13,Stormy,79.67
+Fishing Trawler,Lagos-Apapa,November,166.5,Diesel,4298.0,12297.71,Moderate,92.87
+Fishing Trawler,Warri-Bonny,December,127.66,Diesel,3549.91,10641.9,Moderate,90.82

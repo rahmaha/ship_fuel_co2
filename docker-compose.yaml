@@ -1,0 +1,55 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9696:9696"
+    environment:
+      - MODEL_NAME=ship_fuel_co2_predictor
+      - DV_PATH=models/dv.pkl
+    volumes:
+      - .:/app
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9696/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 10s
+
+    networks:
+      - monitoring_net
+
+  prefect-api:
+    image: prefect-ship-fuel
+    ports:
+      - "4200:4200"
+    networks:
+      - monitoring_net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4200/health"]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+
+
+  worker:
+    image: prefect-ship-fuel
+    environment:
+      - PREFECT_API_URL=http://prefect-api:4200/api
+    command: bash -c "prefect worker start --pool ship_pool"
+    volumes:
+      - .:/app
+    depends_on:
+      prefect-api:
+        condition: service_healthy
+    networks:
+      - monitoring_net
+
+
+networks:
+  monitoring_net:
+    driver: bridge

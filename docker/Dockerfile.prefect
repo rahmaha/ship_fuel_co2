@@ -1,0 +1,6 @@
+# Dockerfile.prefect
+FROM prefecthq/prefect:3.4-python3.10
+
+RUN apt-get update && apt-get install -y curl
+
+CMD ["prefect", "server", "start", "--host", "0.0.0.0", "--port", "4200"]
