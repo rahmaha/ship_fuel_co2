@@ -1,0 +1,36 @@
+[tool.black]
+line-length = 88
+target-version = ['py310'] 
+exclude = '''
+(
+    \.venv
+  | venv
+  | build
+  | dist
+  | \.git
+  | \.github
+  | .*\.ipynb
+  | __pycache__
+  | \.mypy_cache
+  | \.pytest_cache
+  | monitoring/dashboard
+)
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+exclude = [
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    ".git",
+    ".github",
+    "*.ipynb",
+    "__pycache__",
+    ".mypy_cache",
+    ".pytest_cache",
+    "monitoring/dashboard",  
+]
+fix = true

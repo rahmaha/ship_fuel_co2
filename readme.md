@@ -33,3 +33,25 @@ and etc
 
 docker-compose up --build
 
+Unittest: 
+-test_main.py
+-test_train.py
+Integration test:
+- test_api.py
+$env:PYTHONPATH="."; pytest (for testing) -> using powershell on windows
+or do this set PYTHONPATH=.
+pytest (on cmd)
+
+Using black and ruff as linter and code formatter. 
+    - black -> is a code formatter.
+    - Ruff -> is a fast, high-performance linter and formatter.
+
+    ruff check .
+    black .
+
+pre-commit install
+
+make Makefile install
+
+
+
