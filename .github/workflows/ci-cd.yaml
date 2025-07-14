@@ -62,6 +62,8 @@ jobs:
         run: |
           pip install pipenv
           pipenv install --dev
+          pipenv run pip install colorama
+
 
       - name:  Run tests with Pytest
         run: PYTHONPATH=. pipenv run pytest
