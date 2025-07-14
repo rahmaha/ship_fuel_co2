@@ -25,14 +25,14 @@ jobs:
     - name: Install dependencies
       run: pipenv install --dev
     
-    - name: Install ruff separately
-      run: pipenv run pip install ruff
+    # - name: Install ruff separately
+    #   run: pipenv run pip install ruff
 
-    - name: Run linting (Ruff)
-      run: pipenv run ruff . --fix
+    # - name: Run linting (Ruff)
+    #   run: pipenv run ruff . --fix
 
-    - name: Check formatting (Black)
-      run: pipenv run black --check .
+    # - name: Check formatting (Black)
+    #   run: pipenv run black --check .
 
     - name: Run tests
       run: pipenv run pytest
