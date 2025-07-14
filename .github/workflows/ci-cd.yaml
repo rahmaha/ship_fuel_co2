@@ -62,16 +62,12 @@ jobs:
         run: |
           pip install pipenv
           pipenv install --dev
-          pipenv run pip install colorama
-          pipenv run pip install jinja2
 
       - name:  Run tests with Pytest
         run: PYTHONPATH=. pipenv run pytest
 
-      - name: Deploy with Prefect
-        run: pipenv run prefect deploy --all
-        env:
-          PREFECT_API_URL: ${{ secrets.PREFECT_API_URL }}
+      - name: Build Docker image
+        run: docker build -t ship-fuel-co2 -f docker/Dockerfile .
 
       - name: Confirm success
         run: echo "CI/CD completed without errors!"
