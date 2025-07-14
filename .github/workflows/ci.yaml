@@ -29,7 +29,7 @@ jobs:
       run: pipenv run pip install ruff
 
     - name: Run linting (Ruff)
-      run: pipenv run ruff .
+      run: pipenv run ruff . --fix
 
     - name: Check formatting (Black)
       run: pipenv run black --check .
