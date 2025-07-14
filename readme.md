@@ -1,24 +1,35 @@
-# 🚢 Ship Fuel Consumption and CO₂ Emissions Prediction 
+# 🚢 Ship Fuel Consumption and CO₂ Emissions Prediction
 
-This Project builds a full MLOps pipeline for **predicting fuel consumption and CO₂ emissions (multioutput regression)**. This Project also as final project for MLOps Zoomcamp 2025.
+This project builds a complete MLOps pipeline to **predict ship fuel consumption and CO₂ emissions** using multi-output regression. It serves as the final project for the **MLOps Zoomcamp 2025**.
 
-## Problem Description
-Ship is one of the most used transportation either people or goods across waterway. They serve different purpose as they are very important like global trade, defense, fishing and more. Because of that they also contribute to the most CO₂ emissions, making them consume a lot of fuel that make it concers for environtmel and mairtime industry. This project aims to **predict both fuel consumption and CO₂ emissions** of ships based on various operational parameters (e.g., route, weather, engine efficiency). The goal is to help optimize fuel usage and reduce environmental impact by enabling **data-driven decisions**.
+---
 
-The problem is framed as a **multi-output regression** task. The model takes ship features as input and outputs two continuous targets:  
-- `fuel_consumption`  
+## 📌 Problem Description
+
+Ships are widely used for transporting goods and people across waterways. From global trade and defense to fishing and logistics, their role is critical. However, they also contribute significantly to CO₂ emissions and fuel usage, raising environmental concerns.
+
+This project aims to address this issue by predicting **fuel consumption** and **CO₂ emissions** based on operational parameters like route, weather, fuel type, and engine efficiency. The model helps ship operators and engineers make data-driven decisions to **optimize fuel usage and reduce environmental impact**.
+
+This is formulated as a **multi-output regression** task where the model predicts two targets:
+- `fuel_consumption`
 - `CO2_emissions`
 
+---
 
+## 🛠 Project Overview
 
-## Project Overview
-- **Type:** Multi-output Regression
-- **Targets:** `fuel_consumption` & `CO2_emissions`
-- **Model:** XGBoost (wrapped with `MultiOutputRegressor`)
-- **Monitoring:** Prefect + Evidently
-- **Storage:** Model artifacts stored in **LocalStack S3**
-- **Tracking:** MLflow
-- **Deployment:** FastAPI
+| Component       | Description                                |
+|------------------|--------------------------------------------|
+| **Problem Type** | Multi-output Regression                    |
+| **Targets**      | `fuel_consumption`, `CO2_emissions`        |
+| **Model**        | XGBoost + MultiOutputRegressor             |
+| **Tracking**     | MLflow                                     |
+| **Workflow**     | Prefect                                    |
+| **Monitoring**   | Evidently                                  |
+| **Storage**      | LocalStack (S3 emulation)                  |
+| **Deployment**   | FastAPI                                    |
+| **Automation**   | Makefile                                   |
+| **CI/CD**        | GitHub Actions                             |
 
 ---
 
@@ -34,104 +45,83 @@ The problem is framed as a **multi-output regression** task. The model takes shi
 | API         | FastAPI                |
 | CI/CD       | GitHub Actions         |
 | Packaging   | Docker, pipenv         |
-| Automating  | Makefile               |
-| task        |                        |
+| Automation  | Makefile               |
 
 ---
 
-## Reproducibility
-This project doesn't use real cloud. So, don't need real account.
+## 🧪 Reproducibility
 
-### Prerequisites
+This project is fully reproducible **without any real cloud account**. Everything runs locally using Docker and LocalStack.
+
+### 🔧 Prerequisites
+
 - Docker
+- Python 3.10
 - Pipenv
 - Prefect
-- Makefile 
+- Make (for automation)
 
-(please try to meet the prerequisites on your own machine). Also for makefile it doesn't include in pipfile or any on the requirements because it is not package-library.  It’s a system-level tool that runs on your operating system. 
+> ⚠️ `Make` is a system-level tool and not included in `Pipfile`.  
+> - **Windows:** Install via [Chocolatey](https://chocolatey.org/)  
+> - **macOS/Linux:** Usually pre-installed
 
-- Windows: install via [Chocolatey](https://chocolatey.org/)
-- Linux/macOS: usually pre-installed
+---
 
-Then run tasks like:
-```sh
-make test```
+## 📂 Dataset
 
+The dataset comes from [Kaggle](https://www.kaggle.com/datasets/jeleeladekunlefijabi/ship-fuel-consumption-and-co2-emissions-analysis) and is included in the `data/` directory.
 
-### Dataset
-The dataset that we used for this project is from kaggle ![kaggle]https://www.kaggle.com/datasets/jeleeladekunlefijabi/ship-fuel-consumption-and-co2-emissions-analysis. It's really nice dataset. This dataset saved in `data/` folder.
+---
+
+## 🚀 How to Run
 
 ### Step-by-Step
-- first you can using command `make install` or pipenv `pipenv install --dev` to set up your virtual environment and install dependencies
-- run `prefect server start on your terminal`
-- open separate terminal and you can do command make build up
-- open another terminal again and do make deploy and prefect deployment 
 
-1. Problem Description (Make it Worth 2)
+1. **Install dependencies:**
+   ```bash
+   make install
+   # or
+   pipenv install --dev
+   ```
 
-In your README.md, describe:
+2. **Start Prefect server:**
+   ```bash
+   prefect server start or you can use make run-ui
+   ```
+3. **Prefect Worker Pool Setup**
 
-    The business context (e.g. “Predict fuel consumption and CO₂ emissions of ships for better environmental compliance”)
+   Before running the project, make sure you have a Prefect worker pool named `ship_pool`.
 
-    Why it matters
+   You can create it via the CLI:
 
-    What your ML model does
-
-    The outcome (MLflow tracking, local API, etc.)
-
-    XGBRegressor,"{'n_estimators': 50, 'max_depth': 5, 'learning_rate': 0.1}",23d42f65f3c54b1ca2423d0204ca989e,0.14975189304885136,5.565986394882202
-
-
-command on root level:
-
-docker run --rm -it -p 4566:4566 -p 4571:4571 localstack/localstack
-
-prefect deploy
-prefect worker start --pool ship_pool
-prefect deployment run main-flow/ship_training
-
-uvicorn deployment.main:app --reload --port 9696
-python deployment\test.py
-
-docker build -f docker/Dockerfile -t ship_fuel_co2 .
-docker run -it --rm -p 9696:9696 ship_fuel_co2
-docker run --rm --env-file .env -p 9696:9696 ship_fuel_co2
-python deployment\test.py
-
-prefect deploy 
-and etc
-
-docker-compose up --build
-
-Unittest: 
--test_main.py
--test_train.py
-Integration test:
-- test_api.py
-$env:PYTHONPATH="."; pytest (for testing) -> using powershell on windows
-or do this set PYTHONPATH=.
-pytest (on cmd)
-
-Using black and ruff as linter and code formatter. 
-    - black -> is a code formatter.
-    - Ruff -> is a fast, high-performance linter and formatter.
-
-    ruff check .
-    black .
-
-pre-commit install
-
-make Makefile install
-
-# Start LocalStack
-docker-compose up -d
+   ```bash
+   prefect worker pool create ship_pool --type process
 
 
-docker run -d -p 4566:4566 -p 4571:4571 localstack/localstack
+4. **In a new terminal, run Docker services:**
+   ```bash
+   make build
+   make up
+   ```
+
+5. **In another terminal, deploy flows and start the workers:**
+   ```bash
+   make deploy start-worker 
+   ```
+   Note: when prefect asked `Your Prefect workers will need access to this flow's code in order to run it. Would you like your workers to pull your flow code from a remote storage location when running this flow? [y/n] (y)`: n
+   I recommend just always input `n`
+
+6. **Run in other command prefect deployment run**
+   So, if you just want to see the monitoring only you can choose `prefect deployment run monitoring-flow/monitoring-flow` but if you do edit the test.py like maybe change the weather from calm to the stormy then you need to do this command first `prefect deployment run main-flow/ship_training`
+
+6. **Testing The API:**
+   you can test using Script-based – Edit the input inside deployment/test.py
 
 
-aws --endpoint-url=http://localhost:4566 s3 ls \
-  --region us-east-1 \
-  --no-sign-request \
-  --access-key test \
-  --secret-key test
+---
+
+## 📌 Notes
+
+- This project uses **multi-output regression**, meaning it predicts two continuous variables.
+- Some processes  need to be started in separate terminals.
+- Need a lot of further improvement (especially wrap prefect on docker-compose, using IaC and cloud and project structure)
