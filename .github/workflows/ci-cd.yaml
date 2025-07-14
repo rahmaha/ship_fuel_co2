@@ -63,7 +63,7 @@ jobs:
           pip install pipenv
           pipenv install --dev
           pipenv run pip install colorama
-
+          pipenv run pip install jinja2
 
       - name:  Run tests with Pytest
         run: PYTHONPATH=. pipenv run pytest
