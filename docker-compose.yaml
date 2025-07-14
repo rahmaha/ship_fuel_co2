@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - AWS_DEFAULT_REGION=us-east-1
+    networks:
+      - app-net
+
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "9696:9696"
+    environment:
+      - MODEL_PATH=models/model.pkl
+      - DV_PATH=models/dv.pkl
+    depends_on:
+      - localstack
+    volumes:
+      - .:/app
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

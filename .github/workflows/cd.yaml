@@ -1,0 +1,32 @@
+name: CD Pipeline
+
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  cd-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Install pipenv
+      run: pip install pipenv
+
+    - name: Install dependencies
+      run: pipenv install --dev
+
+    - name: Build Docker image
+      run: docker build -t ship-fuel-co2 -f docker/Dockerfile .
+    - name: Deploy Prefect Flows
+      run: pipenv run prefect deploy --all
+
+    - name: Done!
+      run: echo "CD completed and model deployed "

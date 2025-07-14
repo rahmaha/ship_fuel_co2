@@ -4,6 +4,7 @@ import xgboost as xgb
 import mlflow
 import pickle
 import os
+import boto3
 
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.model_selection import train_test_split
@@ -62,6 +63,34 @@ def preprocess_data(df_train: pd.DataFrame, df_test: pd.DataFrame) -> tuple:
 
 
 @task
+def setup_localstack_s3(bucket_name: str, logger=None):
+    s3 = boto3.client(
+        service_name="s3",
+        region_name="us-east-1",
+        aws_access_key_id="test",
+        aws_secret_access_key="test",
+        endpoint_url="http://localhost:4566",
+    )
+
+    try:
+        response = s3.list_buckets()
+        bucket_names = [b["Name"] for b in response.get("Buckets", [])]
+
+        if bucket_name not in bucket_names:
+            s3.create_bucket(Bucket=bucket_name)
+            if logger:
+                logger.info(f"S3 bucket created: {bucket_name}")
+        else:
+            if logger:
+                logger.info(f"S3 bucket already exists: {bucket_name}")
+        return s3
+    except Exception as e:
+        if logger:
+            logger.error(f"Error setting up LocalStack S3: {e}")
+        raise
+
+
+@task
 def train_best_model(
     X_train: np.ndarray,
     X_test: np.ndarray,
@@ -102,12 +131,17 @@ def train_best_model(
             mlflow.sklearn.log_model(
                 mo_model,
                 artifact_path="model",
-                registered_model_name="ship_fuel_co2_predictor",
+                registered_model_name="ship-model-artifacts",
             )
 
             logger.info(f"Saved DictVectorizer at: {dv_path}")
             logger.info(f"Saved model at: {model_path}")
 
+            # upload to localstack S3
+
+            s3 = setup_localstack_s3("ship-model-artifacts", logger)
+            s3.upload_file("models/model.pkl", "ship-model-artifacts", "model.pkl")
+            logger.info("Model uploaded to S3 (LocalStack).")
             # log parameters and metrics
             mlflow.set_tag("model", "XGBRegressor")
             mlflow.set_tag("model_params", str(best_params))
@@ -178,7 +212,7 @@ def main_flow(path: str = "data/ship_fuel_efficiency.csv") -> None:
     model, run_id, rmse = train_best_model(X_train, X_test, y_train, y_test, dv)
 
     # register model
-    model_name = "ship_fuel_co2_predictor"
+    model_name = "ship-model-artifacts"
     register_best_model(run_id, model_name)
 
 

@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter notebooks checkpoint files
+.ipynb_checkpoints/
+
+# Pipenv
+Pipfile.lock
+
+# Virtual environments
+.venv/
+venv/
+
+# pytest
+.pytest_cache/
+.cache/
+
+# MyPy
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Linter
+ruff_cache/
+
+# VS Code settings
+.vscode/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Prefect
+*.orion/
+.prefect/
+monitoring/dashboard/
+
+# Docker
+*.tar
+*.img
+*.pid
+docker-compose.override.yml
+
+
+# GitHub Actions
+.github/workflows/__pycache__/
+
+# Secrets (if used)
+.env
+.env.*
+
+# Others
+*.swp
+*.swo

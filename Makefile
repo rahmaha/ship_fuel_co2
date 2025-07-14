@@ -1,43 +1,54 @@
-.PHONY: install lint format test unit-test integration-test monitoring docker-build docker-up deploy pre-commit lint-check format-check style-check
+.PHONY: install lint format test unit-test integration-test \
+        build up down run-ui deploy start-worker train monitor clean
 
+# === Setup ===
 install:
 	pipenv install --dev
 
-test: unit-test integration-test
-	PYTHONPATH=. pipenv run pytest
-
-unit-test:
-	pytest tests/test_train.py
-	pytest tests/test_main.py
-
-integration-test:
-	pytest tests/test_api.py
-
+# === Code Quality ===
 lint:
-	ruff . --fix
-
-lint-check:
-	ruff .
+	pipenv run ruff . --fix
 
 format:
-	black .
+	pipenv run black .
 
-format-check:
-	black --check .
+# === Testing ===
+test: unit-test integration-test
 
-style-check: lint-check format-check
+unit-test:
+	PYTHONPATH=. pipenv run pytest tests/test_train.py
+	PYTHONPATH=. pipenv run pytest tests/test_main.py
 
-monitoring:
+integration-test:
+	PYTHONPATH=. pipenv run pytest tests/test_api.py
+
+# === Prefect Flows ===
+train:
+	pipenv run python pipeline.py
+
+monitor:
 	pipenv run python monitoring/monitoring.py
 
-docker-build:
-	docker build -t ship-fuel-co2 -f docker/Dockerfile .
-
-docker-up:
-	docker-compose up --build
-
+run-ui:
+	pipenv run prefect server start
 deploy:
+# 	pipenv run prefect deploy --all
 	prefect deploy --all
+start-worker:
+	pipenv run prefect worker start --pool ship_pool
 
-pre-commit:
-	pipenv run pre-commit run --all-files
+# === Docker Compose ===
+build:
+	docker-compose build
+
+up:
+	docker-compose up
+
+down:
+	docker-compose down
+
+# === Clean Up (optional) ===
+clean:
+	rm -rf __pycache__ .pytest_cache .mypy_cache .ruff_cache
+	rm -rf models/*.pkl mlruns mlflow.db
+
