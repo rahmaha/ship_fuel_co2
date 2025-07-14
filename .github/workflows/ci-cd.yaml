@@ -1,0 +1,75 @@
+# name: CI Pipeline
+
+# on:
+#   push:
+#     branches: [main]
+#   pull_request:
+#     branches: [main]
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-22.04
+
+#     steps:
+#     - name: Checkout repository
+#       uses: actions/checkout@v3
+
+#     - name: Set up Python
+#       uses: actions/setup-python@v4
+#       with:
+#         python-version: '3.10'
+
+#     - name: Install pipenv
+#       run: pip install pipenv
+
+#     - name: Install dependencies
+#       run: pipenv install --dev
+    
+#     # - name: Install ruff separately
+#     #   run: pipenv run pip install ruff
+
+#     # - name: Run linting (Ruff)
+#     #   run: pipenv run ruff . --fix
+
+#     # - name: Check formatting (Black)
+#     #   run: pipenv run black --check .
+
+#     - name: Run tests
+#       run: PYTHONPATH=. pipenv run pytest
+
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name:  Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name:  Install pipenv and dependencies
+        run: |
+          pip install pipenv
+          pipenv install --dev
+
+      - name:  Run tests with Pytest
+        run: PYTHONPATH=. pipenv run pytest
+
+      - name: Deploy with Prefect
+        run: pipenv run prefect deploy --all
+        env:
+          PREFECT_API_URL: ${{ secrets.PREFECT_API_URL }}
+
+      - name: Confirm success
+        run: echo "CI/CD completed without errors!"
