@@ -77,6 +77,8 @@ The dataset comes from [Kaggle](https://www.kaggle.com/datasets/jeleeladekunlefi
 
 ### Step-by-Step
 
+   I recommended to have makefile on your system. Please visit official site for how to install makefile.
+
 1. **Install dependencies:**
    ```bash
    make install
@@ -99,9 +101,9 @@ The dataset comes from [Kaggle](https://www.kaggle.com/datasets/jeleeladekunlefi
 
 
 4. **In a new terminal, run Docker services:**
+   before that please open your docker desktop if you are windows/macbook user
    ```bash
-   make build
-   make up
+   make build up 
    ```
 
 5. **In another terminal, deploy flows and start the workers:**
@@ -114,8 +116,8 @@ The dataset comes from [Kaggle](https://www.kaggle.com/datasets/jeleeladekunlefi
 6. **Run in other command prefect deployment run**
    So, if you just want to see the monitoring only you can choose `prefect deployment run monitoring-flow/monitoring-flow` but if you do edit the test.py like maybe change the weather from calm to the stormy then you need to do this command first `prefect deployment run main-flow/ship_training`
 
-6. **Testing The API:**
-   you can test using Script-based – Edit the input inside deployment/test.py
+7. (OPTIONAL) **Change the input**
+   you can try using different input to get know how the pipeline training using prefect works and do use command like in the step 6 where we do `prefect deployment run main-flow/ship_training` and then `prefect deployment run monitoring-flow/monitoring-flow`
 
 
 ---
@@ -123,5 +125,5 @@ The dataset comes from [Kaggle](https://www.kaggle.com/datasets/jeleeladekunlefi
 ## 📌 Notes
 
 - This project uses **multi-output regression**, meaning it predicts two continuous variables.
-- Some processes  need to be started in separate terminals.
+- Some processes  need to be started in separate terminals (around 4 terminals)
 - Need a lot of further improvement (especially wrap prefect on docker-compose, using IaC and cloud and project structure)
